@@ -1,10 +1,10 @@
 {
   "ale": { "branch": "master", "commit": "a7ef1817b7aa06d0f80952ad530be87ad3c8f6e2" },
-  "conform.nvim": { "branch": "master", "commit": "936f2413e6c57185cd873623a29a0685bce4b423" },
+  "conform.nvim": { "branch": "master", "commit": "1a99fdc1d3aa9ccdf3021e67982a679a8c5c740c" },
   "indent-blankline.nvim": { "branch": "master", "commit": "18603eb949eba08300799f64027af11ef922283f" },
   "lazy.nvim": { "branch": "main", "commit": "48b52b5cfcf8f88ed0aff8fde573a5cc20b1306d" },
-  "mini.nvim": { "branch": "main", "commit": "f0d6e89515c6b055c20d257da717bd30211532f1" },
-  "nvim-treesitter": { "branch": "master", "commit": "b6a6d8997c46dc15682020ce4fddc5a89ee1ac0d" },
+  "mini.nvim": { "branch": "main", "commit": "5c72e4d74e05f50325641e5fa921fca97a24cb13" },
+  "nvim-treesitter": { "branch": "master", "commit": "4af16a10b7f1e79275f712a1c6dcf725d301a303" },
   "vim-airline": { "branch": "master", "commit": "81eca994860645acbb58442285cdd70df5c71d2b" },
   "vim-better-whitespace": { "branch": "master", "commit": "86a0579b330b133b8181b8e088943e81c26a809e" },
   "vim-code-dark": { "branch": "colors", "commit": "4bd03cf7dc944da41ad05a2ebeaf33433fca6996" },

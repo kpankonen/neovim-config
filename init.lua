@@ -18,7 +18,7 @@ vim.opt.incsearch = true
 vim.opt.mouse = ""
 vim.opt.number = false
 vim.opt.ruler = true
-vim.opt.scrolloff = 10
+vim.opt.scrolloff = 5
 vim.opt.showcmd = true
 vim.opt.showmode = false
 vim.opt.timeoutlen = 600
@@ -29,6 +29,7 @@ vim.opt.updatetime = 250
 vim.cmd("au BufRead,BufNewFile *.service set filetype=systemd")
 vim.cmd("au FileType dockerfile setlocal shiftwidth=2 tabstop=2 expandtab")
 vim.cmd("au FileType json setlocal shiftwidth=2 tabstop=2 expandtab")
+vim.cmd("au FileType lua setlocal shiftwidth=2 tabstop=2 expandtab")
 vim.cmd("au FileType perl setlocal shiftwidth=4 tabstop=4 expandtab")
 vim.cmd("au FileType python setlocal tabstop=8 shiftwidth=4 softtabstop=4 expandtab")
 vim.cmd("au FileType ruby,eruby setlocal shiftwidth=2 tabstop=2 expandtab")

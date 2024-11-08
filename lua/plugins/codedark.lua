@@ -4,7 +4,7 @@ return {
     branch = "colors",
     priority = 1000,
     init = function()
-      vim.cmd.colorscheme "codedark"
+      vim.cmd.colorscheme("codedark")
     end,
   },
 }

@@ -27,13 +27,14 @@ vim.opt.undofile = false
 vim.opt.updatetime = 250
 
 vim.cmd("au BufRead,BufNewFile *.service set filetype=systemd")
+vim.cmd("au BufRead,BufNewFile *.sls set filetype=sls.yaml")
+vim.cmd("au FileType bash,sh setlocal shiftwidth=2 tabstop=2 expandtab")
 vim.cmd("au FileType dockerfile setlocal shiftwidth=2 tabstop=2 expandtab")
 vim.cmd("au FileType json setlocal shiftwidth=2 tabstop=2 expandtab")
 vim.cmd("au FileType lua setlocal shiftwidth=2 tabstop=2 expandtab")
 vim.cmd("au FileType perl setlocal shiftwidth=4 tabstop=4 expandtab")
 vim.cmd("au FileType python setlocal tabstop=8 shiftwidth=4 softtabstop=4 expandtab")
 vim.cmd("au FileType ruby,eruby setlocal shiftwidth=2 tabstop=2 expandtab")
-vim.cmd("au FileType bash,sh setlocal shiftwidth=2 tabstop=2 expandtab")
 vim.cmd("au FileType tcl setlocal shiftwidth=2 tabstop=2 expandtab")
 vim.cmd("au FileType terraform setlocal shiftwidth=2 tabstop=2 expandtab commentstring=#\\ %s")
 vim.cmd("au FileType xml setlocal shiftwidth=4 tabstop=4 expandtab")

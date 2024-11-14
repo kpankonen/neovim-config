@@ -11,6 +11,8 @@ return {
     },
     opts = {
       formatters_by_ft = {
+        go = { "gofmt" },
+        json = { "jq" },
         lua = { "stylua" },
         packer = { "packer_fmt" },
         python = { "ruff_format" },

@@ -18,6 +18,11 @@ return {
         internal = true,
       },
 
+      current_line_blame_opts = {
+        use_focus = true,
+        delay = 100,
+      },
+
       on_attach = function(bufnr)
         local gitsigns = require("gitsigns")
 

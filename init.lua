@@ -28,6 +28,8 @@ vim.opt.updatetime = 250
 
 vim.cmd("au BufRead,BufNewFile *.service set filetype=systemd")
 vim.cmd("au BufRead,BufNewFile *.sls set filetype=sls.yaml")
+vim.cmd("au BufRead,BufNewFile */ts-ansible/*.yml set filetype=yaml.ansible")
+vim.cmd("au BufRead,BufNewFile */ts-awx/*.yml set filetype=yaml.ansible")
 vim.cmd("au FileType bash,sh setlocal shiftwidth=2 tabstop=2 expandtab")
 vim.cmd("au FileType dockerfile setlocal shiftwidth=2 tabstop=2 expandtab")
 vim.cmd("au FileType json setlocal shiftwidth=2 tabstop=2 expandtab")

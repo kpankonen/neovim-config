@@ -28,11 +28,16 @@ vim.opt.updatetime = 250
 
 vim.cmd("au BufRead,BufNewFile *.service set filetype=systemd")
 vim.cmd("au BufRead,BufNewFile *.sls set filetype=sls.yaml")
+vim.cmd("au BufRead,BufNewFile *.tofu set filetype=tofu.terraform")
+vim.cmd("au BufRead,BufNewFile */argocd-ng/*.yaml set filetype=helm")
 vim.cmd("au BufRead,BufNewFile */helm/*.yaml set filetype=helm")
+vim.cmd("au BufRead,BufNewFile */helm/*.yml set filetype=helm")
+vim.cmd("au BufRead,BufNewFile */kubectl-*.yaml set filetype=yaml.k8s")
 vim.cmd("au BufRead,BufNewFile */ts-ansible/*.yml set filetype=yaml.ansible")
 vim.cmd("au BufRead,BufNewFile */ts-awx/*.yml set filetype=yaml.ansible")
 vim.cmd("au FileType bash,sh setlocal shiftwidth=2 tabstop=2 expandtab")
 vim.cmd("au FileType dockerfile setlocal shiftwidth=2 tabstop=2 expandtab")
+vim.cmd("au FileType helm setlocal shiftwidth=2 tabstop=2 expandtab")
 vim.cmd("au FileType json setlocal shiftwidth=2 tabstop=2 expandtab")
 vim.cmd("au FileType lua setlocal shiftwidth=2 tabstop=2 expandtab")
 vim.cmd("au FileType markdown setlocal shiftwidth=2 tabstop=2 expandtab")
@@ -42,8 +47,10 @@ vim.cmd("au FileType ruby,eruby setlocal shiftwidth=2 tabstop=2 expandtab")
 vim.cmd("au FileType sshconfig setlocal shiftwidth=2 tabstop=2 expandtab")
 vim.cmd("au FileType tcl setlocal shiftwidth=2 tabstop=2 expandtab")
 vim.cmd("au FileType terraform setlocal shiftwidth=2 tabstop=2 expandtab commentstring=#\\ %s")
+vim.cmd("au FileType tofu setlocal shiftwidth=2 tabstop=2 expandtab commentstring=#\\ %s")
 vim.cmd("au FileType xml setlocal shiftwidth=4 tabstop=4 expandtab")
 vim.cmd("au FileType yaml setlocal shiftwidth=2 tabstop=2 expandtab")
+vim.cmd("au FileType yaml.k8s setlocal shiftwidth=2 tabstop=2 expandtab")
 
 local key_opts = { silent = true, noremap = true }
 

@@ -20,6 +20,7 @@ return {
           python = { "ruff_format" },
           sh = { "shfmt" },
           terraform = { "terraform_fmt" },
+          tofu = {"tofu_fmt" },
         },
         formatters = {
           shfmt = {

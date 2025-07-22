@@ -66,6 +66,8 @@ vim.keymap.set("n", "<S-Tab>", "<<_", key_opts)
 vim.keymap.set("i", "<S-Tab>", "<C-D>", key_opts)
 vim.keymap.set("v", "<Tab>", ">gv", key_opts)
 vim.keymap.set("v", "<S-Tab>", "<gv", key_opts)
+vim.keymap.set("n", "<Leader>j", "<cmd>next<CR>", key_opts)
+vim.keymap.set("n", "<Leader>k", "<cmd>prev<CR>", key_opts)
 
 vim.api.nvim_create_autocmd("TextYankPost", {
   desc = "Highlight when yanking (copying) text",

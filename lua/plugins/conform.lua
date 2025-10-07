@@ -21,6 +21,7 @@ return {
           sh = { "shfmt" },
           terraform = { "terraform_fmt" },
           tofu = {"tofu_fmt" },
+          toml = {"tombi" },
         },
         formatters = {
           shfmt = {

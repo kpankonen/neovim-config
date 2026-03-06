@@ -1,6 +1,8 @@
 return {
   {
-    "dense-analysis/ale",
+    -- "dense-analysis/ale",
+    "kpankonen/ale",
+    branch = "terraform-trivy",
 
     config = function()
       vim.keymap.set("n", "<C-j>", "<Plug>(ale_next_wrap)", key_opts)
@@ -11,6 +13,7 @@ return {
 
       vim.g["ale_linter_aliases"] = {
         ["yaml.k8s"] = "yaml",
+        ["tofu"] = "terraform",
       }
 
       vim.cmd([[

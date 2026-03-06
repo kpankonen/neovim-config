@@ -28,9 +28,11 @@ vim.opt.updatetime = 250
 
 vim.cmd("au BufRead,BufNewFile *.service set filetype=systemd")
 vim.cmd("au BufRead,BufNewFile *.sls set filetype=sls.yaml")
+vim.cmd("au BufRead,BufNewFile *.tf set filetype=terraform")
 vim.cmd("au BufRead,BufNewFile *.tofu set filetype=tofu.terraform")
 vim.cmd("au BufRead,BufNewFile */charts/*.yaml set filetype=helm")
 vim.cmd("au BufRead,BufNewFile */kubectl-*.yaml set filetype=yaml.k8s")
+vim.cmd("au BufRead,BufNewFile */karpenter*.yaml set filetype=yaml.k8s")
 vim.cmd("au BufRead,BufNewFile */ansible/*.yaml set filetype=yaml.ansible")
 vim.cmd("au FileType bash,sh setlocal shiftwidth=2 tabstop=2 expandtab")
 vim.cmd("au FileType dockerfile setlocal shiftwidth=2 tabstop=2 expandtab")

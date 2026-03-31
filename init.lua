@@ -96,6 +96,8 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
   -- find plugin configs in lua/plugins
   { import = "plugins" },
+}, {
+  rocks = { enabled = false },
 })
 
 -- vim: ts=2 sts=2 sw=2 et

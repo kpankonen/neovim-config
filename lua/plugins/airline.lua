@@ -1,6 +1,7 @@
 return {
   {
     "vim-airline/vim-airline",
+    cond = not vim.g.vscode,
 
     config = function()
       vim.g["airline_theme"] = "codedark"

@@ -10,6 +10,7 @@ return {
       vim.keymap.set("n", "<leader>a", "<cmd>ALEToggle<cr>", key_opts)
       vim.keymap.set("n", "<F3>", "<cmd>ALEToggle<cr>", key_opts)
       vim.g["ale_go_golangci_lint_package"] = 1
+      vim.g["ale_terraform_trivy_options"] = "--severity LOW,MEDIUM,HIGH,CRITICAL"
 
       vim.g["ale_linter_aliases"] = {
         ["yaml.k8s"] = "yaml",

@@ -23,6 +23,7 @@ vim.opt.showcmd = true
 vim.opt.showmode = false
 vim.opt.timeoutlen = 600
 vim.opt.title = true
+vim.opt.titlestring = "%( %a%) %{expand('%:~')}%( %m%)"
 vim.opt.undofile = false
 vim.opt.updatetime = 250
 

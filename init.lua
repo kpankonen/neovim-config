@@ -8,7 +8,6 @@ vim.opt.directory = vim.fn.expand("~") .. "/.config/nvim/tmp,/tmp"
 
 vim.opt.backspace = "indent,eol,start"
 vim.opt.cursorline = true
-vim.opt.cursorline = true
 vim.opt.expandtab = true
 vim.opt.foldenable = false
 vim.opt.foldmethod = "syntax"
@@ -52,7 +51,7 @@ vim.cmd("au FileType xml setlocal shiftwidth=4 tabstop=4 expandtab")
 vim.cmd("au FileType yaml setlocal shiftwidth=2 tabstop=2 expandtab")
 vim.cmd("au FileType yaml.k8s setlocal shiftwidth=2 tabstop=2 expandtab")
 
-local key_opts = { silent = true, noremap = true }
+local key_opts = require("keyopts")
 
 vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>", key_opts)
 vim.keymap.set("n", "<CR>", "<cmd>nohlsearch<CR>", key_opts)

@@ -1,8 +1,8 @@
 return {
   {
-    -- "dense-analysis/ale",
-    "kpankonen/ale",
-    branch = "terraform-trivy",
+    "dense-analysis/ale",
+    -- "kpankonen/ale",
+    -- branch = "terraform-trivy",
 
     config = function()
       local key_opts = require("keyopts")
